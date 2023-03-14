@@ -54,6 +54,7 @@ body {
   border-radius: 20px;
 }
 .ice-proj__pic--principal {
+  width: 100%;
   max-width: 700px;
   max-height: 600px;
 }
