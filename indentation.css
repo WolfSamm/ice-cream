@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+}
+.btn .btn--rounded {
+  border-radius: 40px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.ice-proj {
+  background-color: #7dac66;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.ice-proj__header {
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  margin: 20px 10px;
+}
+.ice-proj__header--nav {
+  justify-content: space-between;
+  background-color: #ffc98c;
+}
+.ice-proj__header--rounded {
+  background-color: #000000;
+  color: white;
+  justify-content: center;
+  padding: 12px;
+  margin-left: 50px;
+  max-width: 300px;
+}
+
+.ice-proj__brand {
+  padding: 10px;
+}
+
+.ice-proj__btn--text {
+  padding: 0px 20px;
+}
+
+.ice-proj__pic {
+  border-radius: 20px;
+}
+.ice-proj__pic--principal {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.ice-proj__heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.heading__block {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
+}
+
+.sticker {
+  font-size: 100px;
+  color: #fdcb2c;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.big-title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 100px;
+  margin: 0;
+  padding: 5px 50px;
+  word-wrap: break-word;
+}
+
+.ice-proj__text {
+  font-size: 40px;
+  padding-left: 50px;
+}/*# sourceMappingURL=indentation.css.map */
