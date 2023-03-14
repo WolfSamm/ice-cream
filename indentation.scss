@@ -16,13 +16,14 @@ body{
   text-decoration: none;
   color: $cd-txt;
 
-    .btn--rounded{
-      border-radius: 40px;
-    }
-  
-    &:hover{
-      cursor: pointer;
-    }
+      .btn--rounded{
+        border-radius: 40px;
+        color: white;
+      }
+    
+        &:hover{
+          cursor: pointer;
+        }
 
 }
 
@@ -32,25 +33,23 @@ body{
   flex-direction: column;
   padding: 0px 20px;
 
-    &__header{
-    display: flex;
-    align-items: center;
-    border-radius: 40px;
-    margin: 20px 10px;
-  
-      &--nav{  
-          justify-content: space-between;
-          background-color: $cd-second;
-      }
+      &__header{
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+      margin: 20px 10px;
     
-        &--rounded{
-          background-color: #000000;
-          color: white;
-          justify-content: center;
-          padding: 12px;
-          margin-left: 50px;
-          max-width: 300px;
-        }
+          &--nav{  
+              justify-content: space-between;
+              background-color: $cd-second;
+          }
+        
+              &--rounded{
+                justify-content: center;
+                padding: 12px;
+                max-width: 300px;
+                background-color: #000000;
+              }
   }
 
 }
@@ -65,26 +64,38 @@ body{
 
 .ice-proj__pic{
   border-radius: 20px;
-  &--principal{
-    max-width: 600px;
-    max-height: 600px;
-  }
+    &--principal{
+      max-width: 700px;
+      max-height: 600px;
+    }
 }
 
 .ice-proj__heading{
   display: flex;
   width: 100%;
-  justify-content: space-between;
-}
-
-.heading__block{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
   flex-wrap: wrap;
-  align-content: center;
-  gap: 10px;
-}
+  justify-content: space-between;
+
+    .heading__block{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      max-width: 50%;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+        .big-title{
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          font-size: 100px;
+          margin: 0;
+          word-wrap: break-word;
+        }
+  }
+
 
 .sticker{
   font-size: 100px;
@@ -93,20 +104,17 @@ body{
   flex-direction: row-reverse;
 }
 
-.big-title{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  font-size: 100px;
-  margin: 0;
-  padding: 5px 50px;
-  word-wrap: break-word;
-}
 
 .ice-proj__text{
   font-size: 40px;
-  padding-left: 50px;
 }
+
+// --------------------------------------------MAIN----------------------------------
+
+main{
+  display: flex;
+}
+
 
 
 
