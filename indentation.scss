@@ -1,11 +1,12 @@
-$cd-principal: #7dac66;
-$cd-second: #ffc98c;
+$cd-principal: #99c881;
+$cd-second: #ffe8cd;
 $cd-btn: #000000;
 $cd-txt: black;
 
 html{
   scroll-behavior: smooth;
   box-sizing: border-box;
+  // max-width: 1400px;
 }
 
 body{
@@ -16,16 +17,31 @@ body{
   text-decoration: none;
   color: $cd-txt;
 
-      .btn--rounded{
-        border-radius: 40px;
-        color: white;
-      }
-    
         &:hover{
           cursor: pointer;
         }
-
 }
+
+.btn__rounded{
+  border-radius: 40px;
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  transform: scale(0.5);
+  transition-property: transform;
+  transition-duration: 300ms;
+
+      &--main:hover{
+        transform: scale(0.7);
+      }
+
+      &--second{
+        background-color: transparent;
+        color: $cd-btn;
+      }
+}
+
 
 .ice-proj{
   background-color: $cd-principal;
@@ -88,7 +104,6 @@ body{
     }
 
         .big-title{
-          display: flex;
           flex-wrap: wrap;
           width: 100%;
           font-size: 100px;
@@ -112,12 +127,65 @@ body{
 
 // --------------------------------------------MAIN----------------------------------
 
-main{
+.ice-proj__main{
   display: flex;
+  flex-direction: column;
 }
 
+.main__section--flavours{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
 
+}
 
+.txt{
+  white-space: nowrap;
+  font-size: 30px;
+  animation: Scroll 15s linear infinite;
+}
+
+@keyframes Scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100%{
+    transform: translateX(0%);
+
+  }
+
+}
+
+// ----------------------------------------------------------ARTICLES-----------------------------------------------
+
+.section--article{
+  display: flex;
+  padding: 50px;
+  gap: 10px;
+  background-color: #ffe8cd;
+
+}
+
+.article__shop{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  max-height: 600px;
+  border: 1px solid $cd-btn;
+  border-radius: 20px;
+  float: left;
+  
+}
+
+.shop__img{
+  max-width: 200px;
+  height: auto;
+  padding: 30px;
+  border-radius: 50px;
+}
 
 
 
