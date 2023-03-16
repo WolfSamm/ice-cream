@@ -146,8 +146,8 @@
   overflow: hidden;
   border: 1px solid #000000;
 }
-.slider-1 p {
-  background-color: #000000;
+.slider-1 article {
+  background-color: transparent;
   flex-shrink: 0;
   padding: 72px 0;
   width: 100%;
@@ -155,17 +155,14 @@
   font-size: 45px;
   color: #ffe8cd;
 }
+.slider-1 article .shop__img {
+  max-width: 300px;
+}
 .slider-1 .slider {
   display: flex;
   animation: slider-1 12s infinite ease-in-out;
   flex-direction: row-reverse;
-}
-
-.shop__img {
-  max-width: 200px;
-  height: auto;
-  padding: 20px;
-  border-radius: 50px;
+  width: 100%;
 }
 
 @keyframes slider-1 {
@@ -173,7 +170,7 @@
     transform: translateX(0);
   }
   25%, 45% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   50%, 70% {
     transform: translateX(-200%);

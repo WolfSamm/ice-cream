@@ -176,8 +176,8 @@ $cd-txt: black;
         overflow: hidden;
         border: 1px solid $cd-btn;
 
-        p {
-          background-color: $cd-btn;
+        article {
+          background-color: transparent;
           flex-shrink: 0;
           padding: 72px 0;
           width: 100%;
@@ -185,21 +185,29 @@ $cd-txt: black;
           font-size: 45px;
           color: $cd-second;
 
+            .shop__img {
+              max-width: 300px;
+              
+            }
+
         }
 
         .slider{
           display: flex;
           animation: slider-1 12s infinite ease-in-out;
           flex-direction: row-reverse;
+          width: 100%;
     }
   }
 
-  .shop__img{
-    max-width: 200px;
-    height: auto;
-    padding: 20px;
-    border-radius: 50px;
-  }
+
+
+  // 5% par transition, nombre choisi arbitrairement,
+  // 20%
+  // reste divisé par nb de pauses
+  // 80(%) / 4 = 20(%) par :pause
+
+
 
   @keyframes slider-1 {
     0%,
@@ -208,7 +216,7 @@ $cd-txt: black;
     }
     25%,
     45% {
-      transform: translateX(100%);
+      transform: translateX(-100%);
     }
     50%,
     70% {
