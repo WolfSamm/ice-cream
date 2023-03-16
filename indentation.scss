@@ -3,7 +3,7 @@ $cd-second: #ffe8cd;
 $cd-btn: #000000;
 $cd-txt: black;
 
-*{
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -166,11 +166,60 @@ $cd-txt: black;
 
 // ----------------------------------------------------------ARTICLES-----------------------------------------------
 
+.slider-container{
+  background-color: $cd-second;
+}
+
+  .slider-1 {
+        max-width: 600px;
+        margin: 100px auto;
+        overflow: hidden;
+        border: 1px solid $cd-btn;
+
+        p {
+          background-color: $cd-btn;
+          flex-shrink: 0;
+          padding: 72px 0;
+          width: 100%;
+          text-align: center;
+          font-size: 45px;
+          color: $cd-second;
+
+        }
+
+        .slider{
+          display: flex;
+          animation: slider-1 12s infinite ease-in-out;
+          flex-direction: row-reverse;
+    }
+  }
 
   .shop__img{
     max-width: 200px;
     height: auto;
     padding: 20px;
     border-radius: 50px;
+  }
+
+  @keyframes slider-1 {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(100%);
+    }
+    50%,
+    70% {
+      transform: translateX(-200%);
+    }
+    75%,
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
   }
   
