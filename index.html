@@ -6,187 +6,219 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="indentation.css">
   <script src="https://kit.fontawesome.com/dd34c2d2c9.js" crossorigin="anonymous"></script>
+  <script src="index.js" defer></script>
   <title>Ice cream website</title>
 </head>
 
-<body>
+    <body>
 
-  <header class="ice-proj">
+      <header class="ice-proj">
 
-      <section class="ice-proj__header ice-proj__header--nav">
+          <section class="ice-proj__header ice-proj__header--nav">
 
 
-        <div class="ice-projet__nav ice-proj__brand">
+            <div class="ice-projet__nav ice-proj__brand">
 
-          IceCream
+              IceCream
 
-        </div>
+            </div>
 
-        <nav class="ice-proj__nav ice-proj__nav--link ice-proj--rounded">
+            <nav class="ice-proj__nav ice-proj__nav--link ice-proj--rounded">
 
-          <a class="btn btn--clear ice-proj__btn--text" href="#shop">
+              <a class="btn btn--clear ice-proj__btn--text" href="#shop">
 
-            SHOP
+                SHOP
 
-          </a>
+              </a>
 
-          <a class="btn btn--clear ice-proj__btn--text" href="#story">
+              <a class="btn btn--clear ice-proj__btn--text" href="#story">
 
-            OUR STORY
+                OUR STORY
 
-          </a>
+              </a>
 
-          <a class="btn btn--clear ice-proj__btn--text" href="#contact">
+              <a class="btn btn--clear ice-proj__btn--text" href="#contact">
 
-            CONTACT US
+                CONTACT US
 
-          </a>
+              </a>
 
-        </nav>
+            </nav>
 
-        <div class="panier ice-proj__brand">
+            <div class="panier ice-proj__brand">
 
-          <a href="btn">
+              <a href="btn">
 
-            <i class="fa-solid fa-basket-shopping btn btn--basket"></i>
+                <i class="fa-solid fa-basket-shopping btn btn--basket"></i>
 
-          </a>
+              </a>
 
-        </div>
+            </div>
 
-    </section>
+        </section>
 
-    <div class="ice-proj__heading">
+        <div class="ice-proj__heading">
 
-      <section class="heading__block heading__block--text">
+          <section class="heading__block heading__block--text">
 
-        <i class="fa-solid fa-fan sticker"></i>
+            <i class="fa-solid fa-fan sticker"></i>
 
-        <h1 class="big-title">
+            <h1 class="big-title">
 
-          DISCOVER NEW TASTES
+              DISCOVER NEW TASTES
 
-        </h1>
+            </h1>
 
-        <p class="ice-proj__text">
+            <p class="ice-proj__text">
 
-          Original vegan suitable ice cream !
+              Original vegan suitable ice cream !
 
-        </p>
+            </p>
 
-        <button class="btn btn__rounded btn__rounded--main">
+            <button class="btn btn__rounded btn__rounded--main">
 
-          <a class= href="#shop">
+              <a class= href="#shop">
 
-            SHOP ALL PRODUCTS
+                SHOP ALL PRODUCTS
 
-          </a>
+              </a>
 
-        </button>
+            </button>
 
-      </section>
+          </section>
 
-      <section class="heading__block heading__block--img ice-proj--rounded">
+          <section class="heading__block heading__block--img ice-proj--rounded">
 
-        <img class="ice-proj__pic ice-proj__pic--principal"src="./img/principal.jpg" alt="Image d'une glace sur un fond rose avec un neon en forme de glace">
+            <img class="ice-proj__pic ice-proj__pic--principal"src="./img/principal.jpg" alt="Image d'une glace sur un fond rose avec un neon en forme de glace">
 
-      </section>
+          </section>
 
-    </div>
+        </div>  
 
-  </header>
+      </header>
 
-  <main class="ice-proj__main">
+      <main id="shop" class="ice-proj__main">
 
-    <section class="main__section--flavours ice-proj__main--flavours">
+          <section class="main__section--flavours ice-proj__main--flavours">
 
-      <span class="txt"> COCO   -    MANGO   -    RASPBERRY   -    CHERRY   -    PINEAPPLE   -   BERRY   -    STRAWBERRY   -   STRAWBERRY&BASIL&nbsp; </span>
+            <span class="txt"> COCO   -    MANGO   -    RASPBERRY   -    CHERRY   -    PINEAPPLE   -   BERRY   -    STRAWBERRY   -   STRAWBERRY&BASIL&nbsp; </span>
 
-      <span class="txt"> COCO   -    MANGO   -    RASPBERRY   -    CHERRY   -    PINEAPPLE   -   BERRY   -    STRAWBERRY   -   STRAWBERRY&BASIL&nbsp; </span>
+            <span class="txt"> COCO   -    MANGO   -    RASPBERRY   -    CHERRY   -    PINEAPPLE   -   BERRY   -    STRAWBERRY   -   STRAWBERRY&BASIL&nbsp; </span>
 
-    </section>
+          </section>
 
-    <section id="shop" class="section--article">
+          <section class="container">
 
-      <div class="article__shop">
+              <input type="radio" name="position" checked />
+              <input type="radio" name="position" />
+              <input type="radio" name="position" />
+              <input type="radio" name="position" />
+              <input type="radio" name="position" />
 
-        <h2 class="article__title">
+            <div class="item">
 
-          COCO
+              <h2>STRAWBERRY</h2>
 
-        </h2>
+              <img class="shop__img" src="./img/model.jpg" alt="img glace">
 
-        <img class="shop__img" src="./img/model.jpg" alt="image de glace">
+              <button class="btn btn__rounded btn__rounded--second">
 
-        <button class="btn btn__rounded btn__rounded--second">
+                1
 
-          1
+              </button>
 
-        </button>
+              <button class="btn btn__rounded btn__rounded--main">
 
-        <button class="btn btn__rounded btn__rounded--main">
+                ADD TO CART - 10$
 
-          ADD TO CART - $10
+              </button>
 
-        </button>
+            </div>
 
-      </div>
+            <div class="item">
 
-      <div class="article__shop">
+              <h2>STRAWBERRY</h2>
 
-        <h2 class="article__title">
+              <img class="shop__img" src="./img/model.jpg" alt="img glace">
 
-          COCO
+              <button class="btn btn__rounded btn__rounded--second">
 
-        </h2>
+                1
 
-        <img class="shop__img" src="./img/model.jpg" alt="image de glace">
+              </button>
 
-        <button class="btn btn__rounded btn__rounded--second">
+              <button class="btn btn__rounded btn__rounded--main">
 
-          1
+                ADD TO CART - 10$
 
-        </button>
+              </button>
 
-        <button class="btn btn__rounded btn__rounded--main">
+            </div>
 
-          ADD TO CART - $10
+            <div class="item">
 
-        </button>
+              <h2>STRAWBERRY</h2>
 
-      </div>
+              <img class="shop__img" src="./img/model.jpg" alt="img glace">
 
-      <div class="article__shop">
+              <button class="btn btn__rounded btn__rounded--second">
 
-        <h2 class="article__title">
+                1
 
-          COCO
+              </button>
 
-        </h2>
+              <button class="btn btn__rounded btn__rounded--main">
 
-        <img class="shop__img" src="./img/model.jpg" alt="image de glace">
+                ADD TO CART - 10$
 
-        <button class="btn btn__rounded btn__rounded--second">
+              </button>
 
-          1
+            </div>
 
-        </button>
+            <div class="item">
 
-        <button class="btn btn__rounded btn__rounded--main">
+              <h2>STRAWBERRY</h2>
 
-          ADD TO CART - $10
+              <img class="shop__img" src="./img/model.jpg" alt="img glace">
 
-        </button>
+              <button class="btn btn__rounded btn__rounded--second">
 
-      </div>
+                1
 
+              </button>
 
-    </section>
+              <button class="btn btn__rounded btn__rounded--main">
 
-  </main>
+                ADD TO CART - 10$
 
+              </button>
 
-  
-</body>
+            </div>
+
+            <div class="item">
+
+              <h2>STRAWBERRY</h2>
+
+              <img class="shop__img" src="./img/model.jpg" alt="img glace">
+
+              <button class="btn btn__rounded btn__rounded--second">
+
+                1
+
+              </button>
+
+              <button class="btn btn__rounded btn__rounded--main">
+
+                ADD TO CART - 10$
+
+              </button>
+
+            </div>
+
+          </section> 
+
+        </main>  
+
+    </body>
 
 </html>
